@@ -14,7 +14,7 @@ The two main datasets we have:
 From these I take a population map, and mask out any populations that do not
 lie within the historical range of _A. Aegypti_.
 
-There is one script [zika_maps.py](). In the output folder the script will
+There is one script [zika_maps.py](). Running the script will
 save a shapefile of the risk, with a map.
 
 To run this you'll need some spatial
