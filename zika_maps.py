@@ -86,7 +86,7 @@ def aegypti_dist(buffer_size):
     
     df_pop['risk_zone'] = aa_range
     
-    df_pop.to_file('data/zika_risk.shp')
+    df_pop.to_file('output/zika_risk.shp')
     print 'Shapefile saved'
     # creating a colourbar for map
     # it's clunky, geopandas doesn't do this well
@@ -106,7 +106,7 @@ def aegypti_dist(buffer_size):
     # clunky but needed
     sm._A = []
     fig.colorbar(sm, cax=cax)
-    fig.savefig('zika_test.png', dpi=300) 
+    fig.savefig('output/zika_map.png', dpi=300) 
     
     return 0
 
