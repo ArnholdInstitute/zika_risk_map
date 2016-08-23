@@ -1,3 +1,4 @@
+#!/usr/bin/env python 
 """
 
 Creating Zika risk maps
@@ -24,6 +25,7 @@ from shapely.ops import cascaded_union
 import us
 import zipfile
 import urllib
+import os
 
 def aegypti_dist(buffer_size):
     """
@@ -86,6 +88,10 @@ def aegypti_dist(buffer_size):
     
     df_pop['risk_zone'] = aa_range
     
+
+    #Make sure `output` directory exists.  Make one if not
+    if not(os.path.exists('./output')):
+        os.mkdir('./output')
     df_pop.to_file('output/zika_risk.shp')
     print 'Shapefile saved'
     # creating a colourbar for map
