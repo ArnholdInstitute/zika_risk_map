@@ -1,0 +1,10 @@
+geopandas==0.2.1
+matplotlib==1.5.2
+numpy==1.11.1
+pandas==0.18.1
+Shapely==1.5.17
+Fabric==1.12.0
+ijson==2.3
+psycopg2==2.6.2
+simplejson==3.8.2
+us==0.9.1
