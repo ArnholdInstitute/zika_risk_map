@@ -46,7 +46,7 @@ function copyToDB(args){
 }
 
 copyToDB({
-	tablename : tablename,
+	tablename : 'florida_zika',
 	file : __dirname + '/../output/zika.json',
 	schema : [{name : 'BLOCKID10', type : 'character varying(80)'}, {name : 'pop_per_sq_km', type : 'real'}, 
 			  {name : 'zika_risk', type : 'bool'}],
