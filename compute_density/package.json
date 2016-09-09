@@ -1,0 +1,16 @@
+{
+  "name": "compute_density",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Le",
+  "license": "ISC",
+  "dependencies": {
+    "event-stream": "^3.3.4",
+    "geojson-area": "^0.2.1",
+    "geojson-stream": "0.0.1"
+  }
+}
